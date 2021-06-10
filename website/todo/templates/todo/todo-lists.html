@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}할 일 목록들{% endblock %}
+
+{% block content %}
+
+<a href="http://localhost:8000/admin/todo/todolist/add/" target='_blank'><button class="button"style="margin-left : 10px;">글쓰기</button></a>
+<ul>
+    {% for todo in to_do_list %}   
+    <div style = "border:5px solid rgb(158, 158, 158); margin : 10px; width : 50%;">
+        <div style = "margin : 10px;">
+             <li><b>제목 :</b> {{ todo.name }} </li>
+             <li><b>내용 :</b> {{ todo.description }}</li>
+              <li><b>마감 날짜 :</b> {{ todo.date_deadline }}</li>
+              <li><b>남은 일수 :</b> {{ todo.remaining_days }}</li>
+         </div>
+    <footer >
+        <a href="http://localhost:8000/admin/" target='_blank' ><button class="button" style="margin-left : 10px;">수정 | 삭제</button></a>
+
+      </footer>
+    <br>
+    </div>
+    {% endfor %}
+    
+
+    
+</ul>
+
+{% endblock content %}
