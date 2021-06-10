@@ -1,4 +1,5 @@
 
+# website 내부 폴더 설명
 
 ## config폴더 : django 프로젝트  
   
