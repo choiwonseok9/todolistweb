@@ -1,8 +1,8 @@
 
 
-##config폴더 : django 프로젝트  
+## config폴더 : django 프로젝트  
   
-##todo 폴더 : app
+## todo 폴더 : app
   
-##static/bulma : bulma 프레임워크 폴더(CSS...)  
+## static/bulma : bulma 프레임워크 폴더(CSS...)  
  
